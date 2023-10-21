@@ -1,0 +1,55 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  min-height: 100vh;
+}
+
+#popup{
+  position: absolute;
+  z-index: 1000;
+  width: 80vw;
+  max-width: 330px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 30px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #fcebeb;
+  color: #ff0000
+}#popup.loadingPopup{
+  background-color: #cff4fc;
+  color: #055160;
+}#popup.successPopup{
+  background-color: rgb(134, 252, 134);
+  color: rgb(0, 150, 0);
+}#popup.successPopup .btn-close:hover{
+  background-color: rgba(0, 150, 0, 0.2);
+}
+.btn-close{
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-close:hover{
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.btn-link{
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  color: grey;
+}.btn-link:hover{
+  color: black;
+}

@@ -1,0 +1,57 @@
+
+.container {
+    margin-top: 20px;
+}
+
+.d{
+    color: rgb(0, 218, 15);
+}
+#startButton {
+    font-size: 20px;
+    width: 80vw;
+    height: 80vh;
+    max-width: 300px;
+    max-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+#startTopText{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+p{
+    cursor: pointer;
+}
+#gameBox {
+    color:  white;
+    cursor: pointer;
+    width: 80vw;
+    height: 80vh;
+    max-width: 300px;
+    max-height: 500px;
+    margin: 0px auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+}
+#gameTopText{
+    position: absolute;
+    top: 20px;
+}
+#gameMidText{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+

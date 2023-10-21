@@ -1,0 +1,26 @@
+.keypad{
+    position: fixed;
+    bottom: 40px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.keypad button:nth-child(1),.keypad button:nth-child(4){
+    display: flex;
+    margin: auto;
+}
+
+.keypad>button{
+    border-radius: 100%;
+    aspect-ratio: 1;
+    margin: 5px 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#symbols-display{
+    display: flex;
+    gap: 10px;
+} #symbols-display svg{
+    font-size: 32px;
+}
