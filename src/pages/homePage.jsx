@@ -1,6 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {useUser} from '../hooks/useUser'
 export default function HomePage(){
+  const navigate = useNavigate()
+  const queryString = window.location.search
+  const route = new URLSearchParams(queryString).get('route');
+  if(route === 'signup'){navigate('./signup', {replace: true})}
+  if(route === 'login'){navigate('./login', {replace: true})}
+  
   let userInfo = useUser();
   return (<>
   <header data-bs-theme="dark">
