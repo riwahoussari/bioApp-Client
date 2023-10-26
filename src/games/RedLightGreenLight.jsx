@@ -180,7 +180,7 @@ export default function RedLightGreenLight(){
         setLoading('Uploading your result...')
         setError(false)
         setSuccess(false)
-        fetch('http://localhost:2500/gameResult', {
+        fetch('https://bioclock.onrender.com/gameResult', {
             method: "POST",
             headers: {"Content-Type": 'application/json'},
             body: JSON.stringify({result, game: 'red light green light'}),
