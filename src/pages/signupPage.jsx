@@ -58,9 +58,9 @@ async function handleSubmit(e){
     <header data-bs-theme="dark">
       <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
         <div >
-          <a href="../" className="navbar-brand d-flex align-items-center">
+          <Link to="../" className="navbar-brand d-flex align-items-center">
             <strong>App Name</strong>
-          </a>
+          </Link>
         </div>
       </div>
     </header>
