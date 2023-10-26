@@ -314,8 +314,16 @@ export default function MathGame(){
         }
 
         <div className='overlay' ref={overlay}/>
-
-        <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button>
+        <header data-bs-theme="dark">
+            <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
+              <div >
+                <Link to="../" className="navbar-brand d-flex align-items-center">
+                  <strong>App Name</strong>
+                </Link>
+              </div>
+            </div>
+          </header>
+{/*         <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
         <h2>Reaction Test Game</h2>
         <div id="game-container">
             <div className="game-area">
