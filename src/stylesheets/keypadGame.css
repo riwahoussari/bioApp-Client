@@ -50,7 +50,9 @@ body {
     padding: 10px; 
     margin: 5px;
 }
-#keypad .btn:hover{
-    background-color: white;
+@media (hover: none) {
+    #keypad .btn:hover{
+        background-color: white;
+    }
 }
   
