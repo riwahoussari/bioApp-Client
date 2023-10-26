@@ -222,7 +222,7 @@ export default function RedLightGreenLight(){
         </div>
       </header>
            
-    <div className='d-flex flex-column justify-content-center align-items-center py-4 bg-body-tertiary'>
+    <div className='d-flex flex-column align-items-center pt-8 bg-body-tertiary'>
 
     {error && 
         <div id='popup'>
@@ -242,7 +242,6 @@ export default function RedLightGreenLight(){
         </div>
     }
        
-{/*     <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
         <h2>Green Light Red Light</h2>
         <div className='container'>
 
