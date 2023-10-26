@@ -4,7 +4,7 @@ import Square from '@mui/icons-material/CropSquareSharp';
 import Circle from '@mui/icons-material/CircleOutlined';
 import Triangle from '@mui/icons-material/ChangeHistoryOutlined';
 import Cross from '@mui/icons-material/ClearSharp';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useUser } from '../hooks/useUser';
 
 const MemoryGame = () => {
