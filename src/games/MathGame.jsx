@@ -331,7 +331,7 @@ export default function MathGame(){
             <div className="game-area">
                 <p className="instructions-display" ref={instructions}></p>
                 <p className="number-display" ref={numberDisplay}></p>
-                <button className="btn btn-primary start-button" type="button" ref={startButton} onClick={startButtonClick}>Start Game</button>
+                <button className="btn btn-lg btn-primary start-button" type="button" ref={startButton} onClick={startButtonClick}>Start Game</button>
             </div>
 
             <div id="keypad" style={{gridTemplateColumns: '1fr 1fr'}}>
