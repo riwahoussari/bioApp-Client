@@ -180,7 +180,6 @@ const MemoryGame = () => {
     }
 
     <div className='overlay' ref={overlay}/>
-{/*     <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
     <h2>Memory Game</h2>
     <p ref={levelDisplay}></p>
 
@@ -192,7 +191,7 @@ const MemoryGame = () => {
             {isDisplaying && sequence.map(sym => symbols[sym])}
             {userSequence.map(sym => symbols[sym])}
           </div>
-          <button className="btn btn-primary start-button" type="button" ref={startButton} onClick={startButtonClick}>Start Game</button>
+          <button className="btn btn-lg btn-primary start-button" type="button" ref={startButton} onClick={startButtonClick}>Start Game</button>
       </div>
 
       <div className="keypad">
