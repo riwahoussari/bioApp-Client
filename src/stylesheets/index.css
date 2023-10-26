@@ -53,3 +53,15 @@ body{
 }.btn-link:hover{
   color: black;
 }
+
+/* homepage login signup buttons */
+#signupBtn, #loginBtn{
+  position: fixed;
+  top: 15px;
+  z-index: 101;
+}
+#loginBtn{right: 60px;}
+#signupBtn{right: 130px;}
+@media (max-width: 768px) {
+  #signupBtn{left: 60px;}
+}
