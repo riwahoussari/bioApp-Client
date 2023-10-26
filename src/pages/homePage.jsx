@@ -26,7 +26,7 @@ export default function HomePage(){
 <main>
 
 
-<div className="album py-6 bg-body-tertiary" style={{minHeight: '100vh', position: 'relative'}}>
+<div className="album py-6 bg-body-tertiary" style={{minHeight: '100vh', position: 'relative', paddingBottom: '50px'}}>
   <div className="container">
 
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -87,9 +87,10 @@ export default function HomePage(){
 <p style={{
   position: 'absolute',
   bottom: '0px',
-  left: '50%',
   opacity: '0.5',
-  transform: 'translateX(-50%)'
+  margin: '0px',
+  width: '100%', 
+  textAlign: 'center'
 }}>created by Riwa Houssari</p>
 </div>
 </main>
