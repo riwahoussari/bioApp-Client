@@ -53,6 +53,7 @@ body {
 @media (hover: none) {
     #keypad .btn:hover,#keypad .btn:active,#keypad .btn:focus{
         background-color: transparent;
+        color: #6c757d;
     }
 }
-  
+
