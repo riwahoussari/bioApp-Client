@@ -63,5 +63,6 @@ body{
 #loginBtn{right: 60px;}
 #signupBtn{right: 130px;}
 @media (max-width: 768px) {
-  #signupBtn{left: 60px;right: unset}
+  #signupBtn{left: max(8vw, 20px);right: unset}
+  #loginBtn{left: max(8vw, 20px)}
 }
