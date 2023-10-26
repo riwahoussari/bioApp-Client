@@ -210,9 +210,20 @@ export default function RedLightGreenLight(){
 
     let userInfo = useUser()
     let navigate = useNavigate();
-    return(<div className='d-flex flex-column justify-content-center align-items-center py-4 bg-body-tertiary'>
-
+    return(<>
     {userInfo.auth === false && navigate('../login', {replace: true})}
+     <header data-bs-theme="dark">
+        <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
+          <div >
+            <Link to="../" className="navbar-brand d-flex align-items-center">
+              <strong>App Name</strong>
+            </Link>
+          </div>
+        </div>
+      </header>
+           
+    <div className='d-flex flex-column justify-content-center align-items-center py-4 bg-body-tertiary'>
+
     {error && 
         <div id='popup'>
         <p style={{margin: '0', padding: '10px 20px'}}>{error}</p>
@@ -230,15 +241,7 @@ export default function RedLightGreenLight(){
         <button className='btn btn-close p-3' onClick={()=>setSuccess(false)} />
         </div>
     }
-        <header data-bs-theme="dark">
-            <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
-              <div >
-                <Link to="../" className="navbar-brand d-flex align-items-center">
-                  <strong>App Name</strong>
-                </Link>
-              </div>
-            </div>
-          </header>
+       
 {/*     <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
         <h2>Green Light Red Light</h2>
         <div className='container'>
@@ -262,5 +265,5 @@ export default function RedLightGreenLight(){
             </div>
 
         </div>
-    </div>)
+    </div></>)
 }
