@@ -147,9 +147,20 @@ const MemoryGame = () => {
   let userInfo = useUser()
   let navigate = useNavigate();
 
-  return (<div className='d-flex flex-column  align-items-center py-4 bg-body-tertiary' style={{minHeight: "100vh"}}>
-
+  return (<>
     {userInfo.auth === false && navigate('../login', {replace: true})}
+    <header data-bs-theme="dark">
+    <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
+      <div >
+        <Link to="../" className="navbar-brand d-flex align-items-center">
+          <strong>App Name</strong>
+        </Link>
+      </div>
+    </div>
+  </header>
+          
+    <div className='d-flex flex-column  align-items-center py-4 bg-body-tertiary' style={{minHeight: "100vh"}}>
+
     {error && 
         <div id='popup'>
         <p style={{margin: '0', padding: '10px 20px'}}>{error}</p>
@@ -169,15 +180,6 @@ const MemoryGame = () => {
     }
 
     <div className='overlay' ref={overlay}/>
-    <header data-bs-theme="dark">
-    <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
-      <div >
-        <Link to="../" className="navbar-brand d-flex align-items-center">
-          <strong>App Name</strong>
-        </Link>
-      </div>
-    </div>
-  </header>
 {/*     <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
     <h2>Memory Game</h2>
     <p ref={levelDisplay}></p>
@@ -211,7 +213,7 @@ const MemoryGame = () => {
       </div>  
     </div>
     
-  </div>);
+  </div></>);
 };
 
 
