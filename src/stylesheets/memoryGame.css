@@ -18,8 +18,8 @@
     align-items: center;
     justify-content: center;
 }
-@media (hover: none){
-    .keypad>button:hover, .keypad>button:active, .keypad>button:focus{background-color: transparent}
+@media (hover: false){
+    .keypad>button:hover, .keypad>button:active, .keypad>button:focus{background-color: transparent; color: #6c757d;}
 }
 #symbols-display{
     display: flex;
