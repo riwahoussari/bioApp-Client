@@ -9,7 +9,7 @@
 #startButton {
     font-size: 20px;
     width: 80vw;
-    height: 80vh;
+    height: 70vh;
     max-width: 300px;
     max-height: 500px;
     margin: 0 auto;
@@ -34,7 +34,7 @@ p{
     color:  white;
     cursor: pointer;
     width: 80vw;
-    height: 80vh;
+    height: 70vh;
     max-width: 300px;
     max-height: 500px;
     margin: 0px auto;
