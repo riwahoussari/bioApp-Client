@@ -1,7 +1,7 @@
 import '../stylesheets/keypadGame.css'
 import { useRef, useState, useEffect } from 'react'
 import { useUser } from '../hooks/useUser';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 export default function KeypadGame(){
     const numbers = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
     const digits = [1,2,3,4,5,6,7,8,9];
@@ -204,17 +204,7 @@ export default function KeypadGame(){
 
     let userInfo = useUser()
     let navigate = useNavigate();
-    return (<>
-        <header data-bs-theme="dark">
-            <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
-              <div >
-                <Link to="../" className="navbar-brand d-flex align-items-center">
-                  <strong>App Name</strong>
-                </Link>
-              </div>
-            </div>
-          </header>
-    <div className='d-flex flex-column  align-items-center py-4 bg-body-tertiary' style={{minHeight: "100vh"}}>
+    return (<div className='d-flex flex-column  align-items-center py-4 bg-body-tertiary' style={{minHeight: "100vh"}}>
 
         {userInfo.auth === false && navigate('../login', {replace: true})}
         {error && 
@@ -237,6 +227,15 @@ export default function KeypadGame(){
 
 
         <div className='overlay' ref={overlay}/>
+        <header data-bs-theme="dark">
+            <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
+              <div >
+                <Link to="../" className="navbar-brand d-flex align-items-center">
+                  <strong>App Name</strong>
+                </Link>
+              </div>
+            </div>
+          </header>
         
 {/*         <button className='btn btn-outline-dark' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
         <h2>Reaction Test Game</h2>
@@ -262,5 +261,5 @@ export default function KeypadGame(){
                 })}
             </div>
     </div>
-    </div></>)
+    </div>)
 }
