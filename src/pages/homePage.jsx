@@ -7,7 +7,7 @@ export default function HomePage(){
   
   let userInfo = useUser();
   return (<>
-  <header className="navbar navbar-dark bg-success shadow-md d-flex justify-content-center align-items-center" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px'}}>
+  <header className="navbar navbar-dark bg-dark shadow-md d-flex justify-content-center align-items-center" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px'}}>
 
     <div className='d-flex justify-content-between align-items-center'id='headerContent'>
 
