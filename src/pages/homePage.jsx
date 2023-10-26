@@ -9,24 +9,25 @@ export default function HomePage(){
   return (<>
   <header className="navbar navbar-dark bg-success shadow-md d-flex justify-content-center align-items-center" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px'}}>
 
-    <div className='d-flex justify-content-between align-items-center' style={{width: '90%'}} >
+    <div className='d-flex justify-content-between align-items-center'id='headerContent'>
 
         <Link to="./" className="navbar-brand d-flex align-items-start">
           <strong>App Name</strong>
         </Link>
-
-    </div>
-    {!userInfo.auth && <div
-      style={{
+      
+    {!userInfo.auth && <div>
+{/*       style={{
       position: 'fixed',
       top: '15px',
       right: '60px',
       zIndex: '101'
-    }}>
+    }}> */}
   
-      <Link to='./signup' className='btn btn-outline-light btn-sm' >Sign Up</Link>
+      <Link to='./signup' className='btn btn-outline-light btn-sm'>Sign Up</Link>
       <Link to='./login' className='btn btn-light btn-sm ms-3'>Login</Link>
     </div>}
+
+    </div>
 </header>
 
 <main>
