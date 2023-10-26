@@ -3,6 +3,7 @@
     bottom: 40px;
     right: 50%;
     transform: translateX(50%);
+    width: 212px;
 }
 .keypad button:nth-child(1),.keypad button:nth-child(4){
     display: flex;
