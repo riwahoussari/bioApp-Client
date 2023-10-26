@@ -19,7 +19,7 @@
     justify-content: center;
 }
 @media (hover: none){
-    .keypad>button:hover{background-color: white}
+    .keypad>button:hover, .keypad>button:active, .keypad>button:focus{background-color: transparent}
 }
 #symbols-display{
     display: flex;
