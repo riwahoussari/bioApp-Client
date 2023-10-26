@@ -11,7 +11,7 @@ export default function HomePage(){
 
     <div className='d-flex justify-content-between align-items-center'id='headerContent'>
 
-    <Link to="./" className="navbar-brand d-flex align-items-start">
+    <Link to="./" className="navbar-brand d-flex align-items-start m-0">
       <strong>App Name</strong>
     </Link>
       
