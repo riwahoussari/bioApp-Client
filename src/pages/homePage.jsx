@@ -7,14 +7,14 @@ export default function HomePage(){
   
   let userInfo = useUser();
   return (<>
-  <header data-bs-theme="dark">
-  
-    <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'start', display: 'flex'}}>
-      <div className="text-center" >
+  <header className="navbar navbar-dark bg-success shadow-md d-flex justify-content-center align-items-center" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px'}}>
+
+    <div className='d-flex justify-content-between align-items-center' style={{width: '90%'}} >
+
         <Link to="./" className="navbar-brand d-flex align-items-start">
           <strong>App Name</strong>
         </Link>
-      </div>
+
     </div>
     {!userInfo.auth && <div
       style={{
