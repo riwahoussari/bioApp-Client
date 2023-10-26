@@ -18,7 +18,9 @@
     align-items: center;
     justify-content: center;
 }
-
+@media (hover: none){
+    .keypad>button:hover{background-color: white}
+}
 #symbols-display{
     display: flex;
     gap: 10px;
