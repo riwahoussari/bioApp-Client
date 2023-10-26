@@ -169,7 +169,16 @@ const MemoryGame = () => {
     }
 
     <div className='overlay' ref={overlay}/>
-    <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button>
+    <header data-bs-theme="dark">
+    <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
+      <div >
+        <Link to="../" className="navbar-brand d-flex align-items-center">
+          <strong>App Name</strong>
+        </Link>
+      </div>
+    </div>
+  </header>
+{/*     <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
     <h2>Memory Game</h2>
     <p ref={levelDisplay}></p>
 
