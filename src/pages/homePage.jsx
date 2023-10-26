@@ -11,18 +11,11 @@ export default function HomePage(){
 
     <div className='d-flex justify-content-between align-items-center'id='headerContent'>
 
-        <Link to="./" className="navbar-brand d-flex align-items-start">
-          <strong>App Name</strong>
-        </Link>
+    <Link to="./" className="navbar-brand d-flex align-items-start">
+      <strong>App Name</strong>
+    </Link>
       
-    {!userInfo.auth && <div>
-{/*       style={{
-      position: 'fixed',
-      top: '15px',
-      right: '60px',
-      zIndex: '101'
-    }}> */}
-  
+    {!userInfo.auth && <div>  
       <Link to='./signup' className='btn btn-outline-light btn-sm'>Sign Up</Link>
       <Link to='./login' className='btn btn-light btn-sm ms-3'>Login</Link>
     </div>}
