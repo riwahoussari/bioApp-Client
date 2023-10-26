@@ -2,10 +2,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import {useUser} from '../hooks/useUser'
 export default function HomePage(){
   const navigate = useNavigate()
-  // const queryString = window.location.search
-  // const route = new URLSearchParams(queryString).get('route');
-  // if(route === 'signup'){navigate('./signup', {replace: true})}
-  // if(route === 'login'){navigate('./login', {replace: true})}
   const path = new URL(window.location.href).pathname
   navigate(`.${path}`, {replace: true})
   
@@ -15,9 +11,9 @@ export default function HomePage(){
   
     <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
       <div >
-        <a href="./" className="navbar-brand d-flex align-items-center">
+        <Link to="./" className="navbar-brand d-flex align-items-center">
           <strong>App Name</strong>
-        </a>
+        </Link>
       </div>
     </div>
     {!userInfo.auth && <div style={{
@@ -26,8 +22,8 @@ export default function HomePage(){
       right: '60px',
       zIndex: '101'
     }}>
-      <a href='./signup' className='btn btn-outline-light btn-sm'>Sign Up</a>
-      <a href='./login' className='btn btn-light btn-sm ms-3'>Login</a>
+      <Link to='./signup' className='btn btn-outline-light btn-sm'>Sign Up</Link>
+      <Link to='./login' className='btn btn-light btn-sm ms-3'>Login</Link>
     </div>}
 </header>
 
