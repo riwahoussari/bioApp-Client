@@ -152,7 +152,7 @@ const MemoryGame = () => {
     <header data-bs-theme="dark">
     <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
       <div >
-        <Link to="../" className="navbar-brand d-flex align-items-center">
+        <Link to="../" className="navbar-brand d-flex align-items-center m-0">
           <strong>App Name</strong>
         </Link>
       </div>
