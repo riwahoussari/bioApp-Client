@@ -86,7 +86,7 @@ export default function HomePage(){
   </div>
 <p style={{
   position: 'absolute',
-  bottom: '0px',
+  bottom: '10px',
   opacity: '0.5',
   margin: '0px',
   width: '100%', 
