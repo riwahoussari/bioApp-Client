@@ -262,7 +262,7 @@ export default function MathGame(){
         setLoading('Uploading your result...')
         setError(false)
         setSuccess(false)
-        fetch('http://localhost:2500/gameResult', {
+        fetch('https://bioclock.onrender.com/gameResult', {
             method: "POST",
             headers: {"Content-Type": 'application/json'},
             body: JSON.stringify({result, game: 'math game'}),
