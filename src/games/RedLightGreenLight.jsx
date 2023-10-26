@@ -230,8 +230,16 @@ export default function RedLightGreenLight(){
         <button className='btn btn-close p-3' onClick={()=>setSuccess(false)} />
         </div>
     }
-
-    <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button>
+        <header data-bs-theme="dark">
+            <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
+              <div >
+                <Link to="../" className="navbar-brand d-flex align-items-center">
+                  <strong>App Name</strong>
+                </Link>
+              </div>
+            </div>
+          </header>
+{/*     <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button> */}
         <h2>Green Light Red Light</h2>
         <div className='container'>
 
