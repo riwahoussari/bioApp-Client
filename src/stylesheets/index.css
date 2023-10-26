@@ -56,19 +56,8 @@ body{
 
 /* header */
 #headerContent{width: 1296px;}
-#signupBtn, #loginBtn{
-  position: fixed;
-  top: 15px;
-  z-index: 101;
-}
-#loginBtn{right: 60px;}
-#signupBtn{right: 130px;}
 @media (max-width: 1400px) {#headerContent{width: 1116px;}}
 @media (max-width: 1200px) {#headerContent{width: 936px;}}
 @media (max-width: 992px) {#headerContent{width: 696px;}}
-@media (max-width: 768px) {
-  #signupBtn{left: max(8vw, 20px);right: unset}
-  #loginBtn{right: max(8vw, 20px)}
-  #headerContent{width: 516px}
-}
+@media (max-width: 768px) {#headerContent{width: 516px;}}
 @media (max-width: 576px) {#headerContent{width: 90%;}}
