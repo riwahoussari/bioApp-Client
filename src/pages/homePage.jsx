@@ -32,7 +32,7 @@ export default function HomePage(){
 <main>
 
 
-<div className="album py-6 bg-body-tertiary" style={{minHeight: '100vh'}}>
+<div className="album py-6 bg-body-tertiary" style={{minHeight: '100vh', position: 'relative'}}>
   <div className="container">
 
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -91,7 +91,7 @@ export default function HomePage(){
     </div>
   </div>
 <p style={{
-  position: 'fixed',
+  position: 'absolute',
   bottom: '0px',
   left: '50%',
   opacity: '0.5',
