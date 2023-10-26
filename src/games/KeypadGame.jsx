@@ -228,7 +228,7 @@ export default function KeypadGame(){
 
         <div className='overlay' ref={overlay}/>
 
-        <button className='btn btn-link' onClick={()=>{navigate('/', {relative: false})}}>back</button>
+        <button className='btn btn-outline-dark' onClick={()=>{navigate('/', {relative: false})}}>back</button>
         <h2>Reaction Test Game</h2>
         <div id="game-container">
             <div className="game-area">
