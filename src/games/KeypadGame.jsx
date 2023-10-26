@@ -216,7 +216,7 @@ export default function KeypadGame(){
             </div>
           </header>
         
-        <div className='d-flex flex-column  align-items-center py-4 bg-body-tertiary' style={{minHeight: "100vh"}}>
+        <div className='d-flex flex-column  align-items-center pt-8 bg-body-tertiary' style={{minHeight: "100vh"}}>
 
         {error && 
             <div id='popup'>
