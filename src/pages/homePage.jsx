@@ -11,21 +11,21 @@ export default function HomePage(){
   
     <div className="navbar navbar-dark bg-dark shadow-sm" style={{position: 'fixed', zIndex: '100', top: '0', width: '100%', height: '60px', justifyContent: 'center'}}>
       <div className="text-center" >
-        <Link to="./" className="navbar-brand d-flex align-items-center">
+        <Link to="./" className="navbar-brand d-flex align-items-start">
           <strong>App Name</strong>
         </Link>
       </div>
     </div>
-    {!userInfo.auth && <div>
-{/*       style={{
+    {!userInfo.auth && <div
+      style={{
       position: 'fixed',
       top: '15px',
       right: '60px',
       zIndex: '101'
-    }} */}
+    }}>
   
-      <Link to='./signup' className='btn btn-outline-light btn-sm' id='signupBtn'>Sign Up</Link>
-      <Link to='./login' className='btn btn-light btn-sm ms-3' id='loginBtn'>Login</Link>
+      <Link to='./signup' className='btn btn-outline-light btn-sm' >Sign Up</Link>
+      <Link to='./login' className='btn btn-light btn-sm ms-3'>Login</Link>
     </div>}
 </header>
 
