@@ -19,7 +19,7 @@ export default function LoginPage (){
       fetch('https://bioclock.onrender.com/auth/login', {
           method: "POST",
           headers: {"Content-Type": 'application/json'},
-          credentials: 'include',
+          credentials: "include",
           body: JSON.stringify(data)
       }).then(res => {
         if(!res.ok && res.status === 401){
